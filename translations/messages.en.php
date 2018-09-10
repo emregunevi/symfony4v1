@@ -7,8 +7,8 @@
  */
 
 return array(
-    'Book' => 'Book',
-    'title' => 'Integration Toolkit',
-    'documents' => 'Documents',
-    'EPosta' => 'E-mail Notifications',
+    'one' => 'one',
+    'two' => 'two',
+    'three' => 'three',
+    'four' => 'four',
 );

@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %}Welcome!{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+
+   {# {% for i in 1..10 %}
+        <div class="{{ cycle(['even','odd'],i) }}">
+           Emre
+        </div>
+
+    {% endfor %}
+#}
+    {#{% for entry in entries %}
+        <h2>{{ entry }}</h2>
+        <p>{{ entry  }}</p>
+    {% endfor %}#}
+
+   {# <a href="{{ path('homepage',{'max': 5}) }}">Home</a>
+    <img src="{{ asset('files/images/logo.png') }}" alt= "Equinix" />#}
+{% for type,messages in app.session.flashbag.all() %}
+    {% for message in messages %}
+        {{ message | raw }}
+
+    {% endfor %}
+{% endfor %}
+
+
+{% endblock %}
+{% block javascripts %}{% endblock %}

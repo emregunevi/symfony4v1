@@ -9,7 +9,18 @@
 namespace App\Controller;
 
 
+use App\Service\CommonService;
+use Symfony\Component\Translation\TranslatorInterface;
+
 class ServiceController
 {
+    public $translator;
+    public $commonService;
+
+    function __construct(TranslatorInterface $translator , CommonService $commonService){
+        $this->translator = $translator;
+        $this->commonService = $commonService;
+
+    }
 
 }

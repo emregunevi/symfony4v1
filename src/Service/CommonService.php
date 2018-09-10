@@ -9,7 +9,29 @@
 namespace App\Service;
 
 
+
+
 class CommonService
 {
+ /**
+     * @param $array
+     * @param bool $exit
+     * @param string $type
+     */
+    public function printR($array,$exit=true,$type="p"){
+
+        echo "<pre>";
+
+        if($type=="p"){
+            print_r($array);
+        }else{
+            var_dump($array);
+        }
+
+        if($exit) {
+            exit;
+        }
+    }
+
 
 }

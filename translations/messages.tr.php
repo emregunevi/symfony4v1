@@ -7,8 +7,8 @@
  */
 
 return array(
-    'Book' => 'Book',
-    'title' => 'Equinix Ürün ve Hizmet Dokümanları',
-    'documents' => 'Dokümanlar',
-    'EPosta' => 'E-Postalar',
+    'one' => 'bir',
+    'two' => 'iki',
+    'three' => 'üç',
+    'four' => 'dört',
 );

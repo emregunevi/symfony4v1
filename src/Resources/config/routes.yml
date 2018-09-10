@@ -1,0 +1,37 @@
+index:
+  path: /
+  controller: App\Controller\DefaultController::index
+
+homepage:
+  path: /luckynumber/{max}
+  controller: App\Controller\DefaultController::number
+  defaults:
+    max: 10
+
+blog_list:
+  path: /bloglist
+  controller: App\Controller\DefaultController::makeList
+
+blog_show:
+  path: /blogshow/{slug}
+  controller: App\Controller\DefaultController::showList
+
+routesLocations:
+  path: /routesLocations/{_locale}
+  controller: App\Controller\DefaultController::locationRoutes
+  defaults:
+    _locale: tr
+    requirements:
+      _locale: tr|en
+
+download:
+  path: /download
+  controller: App\Controller\DefaultController::download
+
+templates:
+  path: /templates
+  controller: App\Controller\DefaultController::templateExample
+
+showMessage:
+  path: /showMessage
+  controller: App\Controller\DefaultController::showMessage
